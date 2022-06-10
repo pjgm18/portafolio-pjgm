@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Robot', sans-serif;
+    display: flex;
+   /*  solucion para el footer */
+    flex-direction: column;
+    min-height: 100vh;
+    /* otra solucion */
+   /*  grid-template-rows: auto 1fr auto ; */
+
+    
+}
+
+.header {
+    
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+
+}
+.logo{
+    width: 115px;
+    object-fit: cover;
+    
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.navbar-list li{
+    margin: 30px;
+    font-weight: bold;
+    
+}
+.navbar-list li:hover{
+    cursor: pointer;
+}
+.navbar-right ul,
+.navbar-left ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right ul li a:hover,
+.navbar-left ul li a:hover{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    color:rgb(117, 167, 243)
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+   padding-top: 4.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 6.5rem;
+    padding-right: 1.5rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header--list{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    width: 300px;
+}
+
+.header--list li a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+.main--container{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 20px auto;
+   
+}
+
+main .main--container .main--img{
+    /* width: 300px; */
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.main-links{
+    margin: 20px 0;
+}
+.main-link {
+    padding: 10px 20px;   
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+
+.contact--btn{
+    color: white;
+    background-color: salmon;
+}
+.about--btn{
+    text-decoration: underline;
+}
+.main{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.main--socialmedia{
+    display: flex;
+    flex-direction:column;
+    margin-top: 15px;
+}
+.main--socialmedia li {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main--socialmedia h2{
+    font-size: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.main--info{
+    width: 60%;
+    padding-top: 30px;
+}
+.main--info h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.main--info p{
+    margin-bottom: 20px;
+}
+
+.projects{
+    
+    flex-wrap: wrap;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+.projectList {
+       
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-container{
+    width: 300px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 22px;
+}
+
+.project--img{
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.project--description{
+    padding: 10px;
+}
+.project--tecnology{
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+.project--tecnologyItem{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: blanchedalmond;
+
+}
+.fa-brands{
+    font-size: 50px;}
+.socialmedia-list{
+    font-size: 25px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin: 20px auto;
+}
+.contact h1{
+    text-align: center;
+}
+.contact-container{
+    
+}
+footer{
+    background-color: black;
+    margin-top: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+  margin-top: auto;
+}
+footer p{
+    text-align: center;
+}
+  /* genericlist */
+
+  .genericList-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 32px 24px;
+  }
+  
+  .genericList-container .movie-container {
+    display: inline-block;
+    width: 47.5%;
+  }
+  
+  .genericList-container .movie-img {
+    width: 100%;
+  }
+  .inactive {
+    display: none;
+  }
+
+
+
+
+  
