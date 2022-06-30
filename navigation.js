@@ -48,6 +48,8 @@ function homePage(){
     projectSection.classList.add('inactive')
     mainSection.classList.remove('inactive')
     genericList.classList.add('inactive')
+    contacSection.classList.add('inactive')
+    aboutSection.classList.add('inactive')
 
     
     /* getCategoriesPreview()
@@ -61,6 +63,8 @@ function projectsPage(){
     genericList.classList.add('inactive')
     mainSection.classList.add('inactive')
     projectSection.classList.remove('inactive')
+    aboutSection.classList.add('inactive') 
+    contacSection.classList.add('inactive')
 
 }
 
@@ -69,5 +73,13 @@ function contactPage(){
     projectSection.classList.add('inactive')
     genericList.classList.add('inactive')
     contacSection.classList.remove('inactive')
+    aboutSection.classList.add('inactive')
 }
-irvingvjuarez.netlify.app
+
+function aboutPage(){
+    mainSection.classList.add('inactive')
+    projectSection.classList.add('inactive')
+    genericList.classList.add('inactive')
+    contacSection.classList.add('inactive')
+    aboutSection.classList.remove('inactive')
+}

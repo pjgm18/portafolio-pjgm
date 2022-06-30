@@ -5,6 +5,7 @@ const mainSection = document.querySelector('#mainSection')
 const projectSection = document.querySelector('#projectSection')
 const genericList = document.querySelector('#genericList')
 const contacSection = document.querySelector('#contactSection')
+const aboutSection = document.querySelector('#aboutSection')
 
 
 //Elements
