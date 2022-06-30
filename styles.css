@@ -100,7 +100,6 @@ a{
 }
 .header--list{
     display: flex;
-    justify-content: space-between;
     text-decoration: none;
     list-style: none;
     width: 300px;
@@ -113,6 +112,7 @@ a{
 
 main{
     width: 100%;
+    margin: 0 auto;
     max-width: 1150px;
     height: auto;
    /*  display: flex;
@@ -131,7 +131,7 @@ main{
 .main-container--info{
     width: 100%;
     min-width: 288px;
-    max-width: 650px;
+    /* max-width: 650px; */
     padding-top: 30px;
 }
 .main-container--info h1{
@@ -150,13 +150,15 @@ main{
 
 
 
-
+picture {
+    width: 250px;
+    height:250px;
+}
 
 
 .main--img{
     /* width: 300px; */
-    width: 250px;
-    height:250px;
+    width: 100%;
     min-width: 50%;
     border-radius: 50%;
     object-fit: cover;
@@ -182,21 +184,45 @@ main{
 }
 
 .main--socialmedia{
-    display: flex;
-    flex-direction:column;
-    margin-top: 15px;
+   
 }
+
+.items {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.items div { 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 0;
+}
+.item--name {
+    font-size: 1.92rem;
+    text-align: center;
+}
+.item--name span { 
+    font-size: 1.36rem; 
+    text-align: center;
+    display: block;
+    
+}
+
+
+
 .main--socialmedia li {
 
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 
-.main--socialmedia h2{
+/* .main--socialmedia h2{
     font-size: 10px;
     margin-right: 10px;
     text-align: center;
-}
+} */
 .about-section {
     width: 90%;
     margin: 0 auto;
@@ -365,9 +391,7 @@ footer p{
     
   }
   @media (min-width: 768px) {
-    .main-container {
-        display: flex;
-    }
+   
     .project-section--container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -380,11 +404,36 @@ footer p{
     .navbar-right ul {
         display: flex;
     }
+    
+  }
+  @media (min-width: 1024px){
+    .main-container {
+        display: flex;
+    }
     .main--img {
         display: block;
     }
+
   }
 
+  @media (min-width: 800px) {
+    .items {
+        display: flex;
+        justify-content: space-between;
+    }
+    .items div  {
+        flex-direction: row;
+    }
+    .items div i {
+        margin: 0 20px 0 0;
+    }
+    .item--name {
+        text-align: left;
+    }
+    .item--name span{
+        text-align: left;
+    }
+  }
 
 
 
