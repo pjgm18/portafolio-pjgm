@@ -510,14 +510,14 @@ footer p{
   .inactive {
     display: none;
   }
-.contact-section {
+.technologies-section {
     width: 90%;
     margin: 0 auto;
 }
-.contact-container h1 {
+.technologies-section h1 {
     font-size: 2.8rem;
     font-weight: bold;
-    margin-bottom: 42px;
+    margin-bottom: 30px;
     /* min-width: 288px; */
     max-width: 900px;
 
@@ -527,8 +527,46 @@ footer p{
     font-weight: 400;
     margin-bottom: 20px;
 }
-
-
+.technologies-img--container{
+    min-width: 100px;
+    min-height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1%;
+/*     justify-content: space-between;
+ */    margin-bottom: 30px;
+}
+.img-html {
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/Icons/cdnlogo.com_html.svg');
+    background-size: contain;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.img-css {
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/Icons/cdnlogo.com_css.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-js {
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/Icons/js.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tech-name{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
   @media (min-width: 650px){
     .project-section--container {
         grid-template-columns: 1fr 1fr;
@@ -540,6 +578,15 @@ footer p{
         gap: 1%;
     }
     
+    .img-html,
+    .img-css,
+    .img-js{
+        min-width: 200px;
+        min-height: 200px;
+    }
+    .tech-name{
+        font-size: 2rem;
+    }
   }
   @media (min-width: 768px) {
    
@@ -572,6 +619,7 @@ footer p{
     cursor: pointer;
 }
  */
+ 
     .nav__checkbox, .nav__toggle {
         display: none;
     }
@@ -639,4 +687,5 @@ footer p{
   }
 
 
+  
   
